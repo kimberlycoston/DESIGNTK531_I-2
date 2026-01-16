@@ -139,9 +139,9 @@ Minimal. The only new action is pressing a button instead of scooping.
 
 ### Tradeoff Analysis
 
-This redesign introduces additional components—sensors, a motor, and basic control logic—that increase complexity compared to a passive container. However, these tradeoffs are intentionally low-risk.
+This redesign introduces additional components (sensors, a motor, and basic control logic) that increase complexity compared to a passive container. However, these tradeoffs are intentionally low-risk.
 
-If any component fails, the system degrades gracefully rather than catastrophically. The user can always open the lid and revert to manual scooping, preserving the original functionality. This ensures that no failure mode prevents access to the product itself.
+If any component fails, the system degrades gracefully rather than complete failure. The user can always open the lid and revert to manual scooping, preserving the original functionality. This ensures that no failure mode prevents access to the product itself.
 
 Added Complexity
 
@@ -153,7 +153,7 @@ Weight-based sensing may require occasional recalibration. While this adds minor
 
 Power Dependence
 
-The system requires wall power, introducing a dependency that does not exist in traditional containers. However, loss of power does not block access to the powder—it only disables the automated convenience.
+The system requires wall power, introducing a dependency that does not exist in traditional containers. However, loss of power does not block access to the powder, it only disables the automated convenience.
 
 Cost
 
@@ -163,4 +163,4 @@ Why This Tradeoff Is Acceptable
 
 This object is designed to fail softly. No single failure prevents the core task from being completed. Instead, the system offers convenience when functioning and reverts to familiar interaction when not.
 
-This makes the added intelligence appropriate: it improves usability without introducing fragile dependency.
+This makes the added improvements appropriate: it improves usability without introducing fragile dependency.
