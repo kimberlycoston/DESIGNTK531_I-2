@@ -2,7 +2,7 @@
 
 ## Overview
 
-This assignment analyzes a common physical object—the protein powder container and scoop system—and proposes a redesigned version that integrates sensing and intelligent feedback to improve usability, reliability, and everyday workflow fit.
+This assignment analyzes a common physical object, the protein powder container and scoop system, and proposes a redesigned version that integrates sensing and intelligent feedback to improve usability, reliability, and everyday workflow fit.
 
 Rather than treating the container as a passive storage vessel, this project reframes it as a high-frequency interaction object that plays a role in daily routines. By examining where the current design fails to meet real-world usage patterns, this redesign aims to reduce friction, improve feedback, and better integrate into everyday life.
 
@@ -20,7 +20,7 @@ This workflow occurs frequently, often under time pressure and fatigue, making i
 ## Object Analysis & Missing Affordances
 #### Awareness Gaps
 
-• Gap 1: No awareness of serving size accuracy
+• Gap 1: No awareness of serving size accuracy (system doesn't know reality)
 
 Use scenario: A user wants consistent protein intake but relies on eyeballing scoop size.  
 The gap: The system cannot detect or control how much is actually dispensed.  
@@ -28,7 +28,7 @@ Opportunity: The object could dispense precise amounts or detect inconsistencies
 Justification: Scoop-based measurement is unreliable. This is a real accuracy problem, not a novelty feature.  
 
 #### Feedback Gaps
-• Gap 2: No confirmation of successful action
+• Gap 2: No confirmation of successful action (user doesn't know reality)
 
 Use scenario: Similar to above. A user wants consistent protein intake but relies on eyeballing scoop size.  
 The gap: There is no feedback confirming that the correct amount was dispensed.  
@@ -78,16 +78,29 @@ Justification: Repetitive tasks should become easier, not remain equally demandi
 
 The redesign replaces the scoop-based workflow with a single-step dispensing interaction.  
 
-Instead of:
+Old product and workflow:
 Go to Cabinet → Open → Scoop → Level → Pour → Close → Return to Cabinet
 
-The new flow becomes:
+New product and workflow:
 Place cup → Press button → Receive exact amount
 
-* The primary friction in this workflow is not remembering when to make a shake, but the physical and cognitive effort required during the act of dispensing. Automating timing would add system complexity without meaningfully improving the core usability problem. For this reason, the redesign prioritizes improving moment-of-use interaction rather than predictive scheduling, thus, I chose not to address gap 5 listed above.
 
 ### Design Rationale
-ENTER STUFF HERE
+This redesign prioritizes moment-of-use friction rather than long-term habit optimization. While the object presents opportunities for anticipation (e.g., learning routines), the core usability failure occurs during the physical act of dispensing: the current system requires fine motor control, visual attention, and repeated manual steps to accomplish a simple, habitual task.
+
+The redesign specifically addresses the following gaps:
+
+• Awareness Gap (Gap 1): By integrating a load cell, the system gains awareness of the quantity being dispensed, enabling consistent dosing.
+
+• Feedback Gap (Gap 2): Visual and audio confirmation replace guesswork, reducing cognitive uncertainty.
+
+• Adaptation Gap (Gap 3): User-set portion preferences allow the system to accommodate different nutritional goals.
+
+• Contextual Fit Gap (Gap 4): The single-action dispense mechanism supports one-handed, low-attention interaction.
+
+• Social Fit Gaps (Gaps 6–7): The form factor is designed to integrate into kitchen environments without performative or explanatory cost, and the workflow is compressed into a single step.
+
+Gap 5 was intentionally not addressed. While predictive features could be added, they would increase system complexity without meaningfully improving the core interaction problem. The primary friction is not remembering to make a shake, but the physical and cognitive effort required to prepare one repeatedly. This redesign therefore focuses on improving reliability and ease at the moment of use rather than automating scheduling.
 
 ### Proposed Features
 
@@ -105,6 +118,7 @@ ENTER STUFF HERE
 
 • Audio feedback: Confirms successful dispense
 
+Proposed feature justification: This redesign requires sensing and computational logic because precision, feedback, and adaptation cannot be reliably achieved through passive mechanical design alone. Load-based measurement enables dynamic adjustment for different powders with varying densities, which volumetric scoops cannot accommodate. Feedback systems allow the object to surface hidden internal states (remaining quantity, dosing accuracy), which traditional containers cannot communicate.
 
 ### Social Considerations
 • Habit Replacement
@@ -123,22 +137,30 @@ Low. It resembles familiar kitchen appliances and does not require explanation.
 
 Minimal. The only new action is pressing a button instead of scooping.
 
-### Tradeoff Analysis  
+### Tradeoff Analysis
 
-• New Costs
+This redesign introduces additional components—sensors, a motor, and basic control logic—that increase complexity compared to a passive container. However, these tradeoffs are intentionally low-risk.
 
-• Sensors and motors
+If any component fails, the system degrades gracefully rather than catastrophically. The user can always open the lid and revert to manual scooping, preserving the original functionality. This ensures that no failure mode prevents access to the product itself.
 
-• Manufacturing complexity
+Added Complexity
 
-• Maintenance
+The inclusion of a motorized dispensing mechanism introduces the possibility of mechanical jamming or wear. However, because the object is not safety-critical, these failures result in inconvenience rather than harm.
 
-New Failure Modes
-Failure	Risk    |   Mitigation
-Motor jam   |   No dispense |   Manual override
-Sensor drift    |	Inaccuracy  |   Periodic calibration
-Power loss  |   Unusable    |   Removable Lid
+Calibration and Accuracy
 
-Why This Tradeoff Is Worth It:
+Weight-based sensing may require occasional recalibration. While this adds minor maintenance overhead, it enables more reliable dosing than volumetric scoops, which are inherently inconsistent.
 
-This redesign addresses cumulative habitual friction. Small inefficiencies become meaningful when repeated daily. The goal is reliability, reduced effort, and better workflow fit.
+Power Dependence
+
+The system requires wall power, introducing a dependency that does not exist in traditional containers. However, loss of power does not block access to the powder—it only disables the automated convenience.
+
+Cost
+
+This design would be more expensive than disposable tubs, shifting the object from packaging to a semi-durable appliance. This tradeoff is justified by its repeated daily use and long-term convenience.
+
+Why This Tradeoff Is Acceptable
+
+This object is designed to fail softly. No single failure prevents the core task from being completed. Instead, the system offers convenience when functioning and reverts to familiar interaction when not.
+
+This makes the added intelligence appropriate: it improves usability without introducing fragile dependency.
