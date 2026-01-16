@@ -18,7 +18,7 @@ Social fit gaps
 
 Rather than asking what technology could be added, this critique focused on what the object currently fails to do and how those failures affect real user behavior.
 
-# Everyday Object Selected
+## Everyday Object Selected
 
 Protein powder container with scoop
 
@@ -28,7 +28,7 @@ Go to Cabinet → Open → Scoop → Level → Pour → Close → Return to Cabi
 
 This workflow occurs frequently, often under time pressure and fatigue, making it an ideal choice to examine for usability analysis.
 
-1. Identified Gaps
+# 1. Identified Gaps
 Awareness Gaps
 
 Gap 1: No awareness of serving size accuracy
@@ -85,7 +85,7 @@ The gap: The system requires a multi-step interaction for a simple task.
 Opportunity: The interaction could be compressed into a single action.
 Justification: Repetitive tasks should become easier, not remain equally demanding.
 
-# 2. Proposed Redesign
+## 2. Proposed Redesign
 Concept
 
 The redesign replaces the scoop-based workflow with a single-step dispensing interaction.
@@ -98,8 +98,11 @@ Place cup → Press button → Receive exact amount
 
 * The primary friction in this workflow is not remembering when to make a shake, but the physical and cognitive effort required during the act of dispensing. Automating timing would add system complexity without meaningfully improving the core usability problem. For this reason, the redesign prioritizes improving moment-of-use interaction rather than predictive scheduling, thus, I chose not to address gap 5 listed above.
 
-## Proposed Features
-### Sensors
+### Design Rationale
+ENTER STUFF HERE
+
+### Proposed Features
+Sensors
 
 Load cell (weight sensor): Tracks remaining quantity and ensures accurate dosing
 
@@ -114,7 +117,7 @@ LED: Shows status and warnings
 Audio feedback: Confirms successful dispense
 
 
-3. Social Considerations
+### Social Considerations
 Habit Replacement
 
 The redesign replaces scooping but preserves the core routine: making a shake.
@@ -131,7 +134,8 @@ Behavior Change
 
 Minimal. The only new action is pressing a button instead of scooping.
 
-4. Tradeoff Analysis
+### Tradeoff Analysis  
+
 New Costs
 
 Sensors and motors
