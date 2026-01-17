@@ -2,9 +2,9 @@
 
 ## Overview
 
-This assignment analyzes a common physical object, the protein powder container and scoop system, and proposes a redesigned version that integrates sensing and intelligent feedback to improve usability, reliability, and everyday workflow fit.
+This assignment analyzes a common physical object, the protein powder container and scoop system, and proposes a redesigned version that integrates sensors and actuators to improve everyday usability.
 
-Rather than treating the container as a passive storage vessel, this project reframes it as a high-frequency interaction object that plays a role in daily routines. By examining where the current design fails to meet real-world usage patterns, this redesign aims to reduce friction, improve feedback, and better integrate into everyday life.
+Rather than treating the protein container as a passive storage vessel, this project reframes it as a high-frequency interaction object that plays a role in daily routines. By examining where the current design fails to meet real-world usage patterns, this redesign aims to reduce habitual friction, improve aesthetic coherence, and better integrate into everyday life.
 
 
 ## Everyday Object Selected
@@ -17,15 +17,15 @@ Go to Cabinet → Open → Scoop → Level → Pour → Close → Return to Cabi
 
 This workflow occurs frequently, often under time pressure and fatigue, making it an ideal choice to examine for usability analysis.
 
-## Object Analysis & Missing Affordances
+## 1. Object Analysis & Missing Affordances
 #### Awareness Gaps
 
 • Gap 1: No awareness of serving size accuracy (system doesn't know reality)
 
 Use scenario: A user wants consistent protein intake but relies on eyeballing scoop size.  
 The gap: The system cannot detect or control how much is actually dispensed.  
-Opportunity: The object could dispense precise amounts or detect inconsistencies.  
-Justification: Scoop-based measurement is unreliable. This is a real accuracy problem, not a novelty feature.  
+Opportunity: The object could provide precise amounts or detect inconsistencies.  
+Justification: Scoop-based measurement is unreliable. 
 
 #### Feedback Gaps
 • Gap 2: No confirmation of successful action (user doesn't know reality)
@@ -46,7 +46,7 @@ Justification: The object currently ignores variation in user needs.
 
 • Gap 4: No accommodation for constrained contexts
 
-Use scenario: The user is holding a shaker, phone, or coffee and is rushed.  
+Use scenario: The user is holding a shaker, phone, or coffee and is rushed. Or the user is rushed and has multiple priorities that are not automated.
 The gap: The system requires two hands, visual attention, and fine motor control.  
 Opportunity: It could support one-handed or low-attention interaction.  
 Justification: This is a real mismatch between designed and actual usage.  
@@ -64,7 +64,7 @@ Justification: Many everyday objects already adapt to routine behavior to reduce
 
 Use scenario: Large protein tubs are stored awkwardly or left on counters, decreasing overall kitchen aesthetic.  
 The gap: The design prioritizes shipping and branding over domestic integration.  
-Opportunity: A redesign could be compact, discreet, and space-efficient.  
+Opportunity: A redesign could be compact and aesthetically integrated into countertop space.  
 Justification: Objects must fit socially and spatially into real homes.  
 
 • Gap 7: Cumbersome daily ritual
@@ -73,6 +73,13 @@ Use scenario: Daily repeated use.
 The gap: The system requires a multi-step interaction for a simple task.  
 Opportunity: The interaction could be compressed into a single action.  
 Justification: Repetitive tasks should become easier, not remain equally demanding.  
+
+• Gap 8: High-contact, messy interaction
+
+Use scenario: The user reaches into a deep container to scoop the protein powder. Their hand and forearm often brush against the inside walls, coating their skin with powder.
+The gap: The current design requires direct hand insertion into the container, making messiness unavoidable. Powder residue accumulates on the user’s skin, clothing, and the surrounding countertop.
+Opportunity: A contactless or enclosed dispensing mechanism could eliminate direct hand contact, reducing mess and improving hygiene.
+Justification: Repeated daily mess creates unnecessary friction, increases cleanup burden, and reduces the desirability of the interaction. Over time, this small annoyance compounds into meaningful resistance to use.
 
 ## 2. Proposed Redesign
 
@@ -123,7 +130,7 @@ Proposed feature justification: This redesign requires sensing and computational
 ### Social Considerations
 • Habit Replacement
 
-The redesign replaces scooping but preserves the core routine: making a shake.
+The redesign replaces scooping but preserves the core routine of making a shake.
 
 • Visibility
 
@@ -163,4 +170,4 @@ Why This Tradeoff Is Acceptable
 
 This object is designed to fail softly. No single failure prevents the core task from being completed. Instead, the system offers convenience when functioning and reverts to familiar interaction when not.
 
-This makes the added improvements appropriate: it improves usability without introducing fragile dependency.
+This makes the added improvements appropriate as it improves usability without introducing fragile dependency.
