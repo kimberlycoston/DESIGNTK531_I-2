@@ -106,17 +106,17 @@ Gap 5 was intentionally not addressed. While predictive features could be added,
 
 • Sensors
 
-• Load cell (weight sensor): Tracks remaining quantity and ensures accurate dosing
+    • Load cell (weight sensor): Tracks remaining quantity and ensures accurate dosing
 
-• Proximity or capacitive sensor: Detects when a cup is present
+    • Proximity or capacitive sensor: Detects when a cup is present
 
 • Actuators
 
-• Motorized auger: Dispenses controlled amounts
+    • Motorized auger: Dispenses controlled amounts
 
-• LED: Shows status and warnings
+• LCD Display: Shows weight
 
-• Audio feedback: Confirms successful dispense
+• Audio feedback: Confirms successful dispense (maybe)
 
 Proposed feature justification: This redesign requires sensing and computational logic because precision, feedback, and adaptation cannot be reliably achieved through passive mechanical design alone. Load-based measurement enables dynamic adjustment for different powders with varying densities, which volumetric scoops cannot accommodate. Feedback systems allow the object to surface hidden internal states (remaining quantity, dosing accuracy), which traditional containers cannot communicate.
 
