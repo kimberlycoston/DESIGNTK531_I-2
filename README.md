@@ -76,10 +76,10 @@ Justification: Repetitive tasks should become easier, not remain equally demandi
 
 • Gap 8: High-contact, messy interaction
 
-Use scenario: The user reaches into a deep container to scoop the protein powder. Their hand and forearm often brush against the inside walls, coating their skin with powder.
-The gap: The current design requires direct hand insertion into the container, making messiness unavoidable. Powder residue accumulates on the user’s skin, clothing, and the surrounding countertop.
-Opportunity: A contactless or enclosed dispensing mechanism could eliminate direct hand contact, reducing mess and improving hygiene.
-Justification: Repeated daily mess creates unnecessary friction, increases cleanup burden, and reduces the desirability of the interaction. Over time, this small annoyance compounds into meaningful resistance to use.
+Use scenario: The user reaches into a deep container to scoop the protein powder. Their hand and forearm often brush against the inside walls, coating their skin with powder.  
+The gap: The current design requires direct hand insertion into the container, making messiness unavoidable. Powder residue accumulates on the user’s skin, clothing, and the surrounding countertop.  
+Opportunity: A contactless or enclosed dispensing mechanism could eliminate direct hand contact, reducing mess and improving hygiene.  
+Justification: Repeated daily mess creates unnecessary friction, increases cleanup burden, and reduces the desirability of the interaction. Over time, this small annoyance compounds into meaningful resistance to use.  
 
 ## 2. Proposed Redesign
 
