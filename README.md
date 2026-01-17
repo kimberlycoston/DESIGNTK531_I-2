@@ -1,4 +1,4 @@
-# Smart Protein Dispensing System
+# Protein Powder Container
 
 ## Overview
 
