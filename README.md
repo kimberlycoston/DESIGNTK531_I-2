@@ -166,8 +166,4 @@ Cost
 
 This design would be more expensive than disposable tubs, shifting the object from packaging to a semi-durable appliance. This tradeoff is justified by its repeated daily use and long-term convenience.
 
-Why This Tradeoff Is Acceptable
-
-This object is designed to fail softly. No single failure prevents the core task from being completed. Instead, the system offers convenience when functioning and reverts to familiar interaction when not.
-
-This makes the added improvements appropriate as it improves usability without introducing fragile dependency.
+Tradeoff explanation: This object is designed to fail softly. No single failure prevents the core task from being completed. Instead, the system offers convenience when functioning and reverts to familiar interaction when not. This makes the added improvements appropriate as it improves usability without introducing fragile dependency.
