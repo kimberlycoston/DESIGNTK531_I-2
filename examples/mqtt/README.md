@@ -2,8 +2,8 @@
 
 ## Project description
 
-This hw assignment demonstrates a basic MQTT publish/subscribe workflow extended with an LLM.
-A publisher sends sample sensor data to an MQTT topic, and a subscriber listens for incoming messages.
+This hw assignment demonstrates a basic MQTT publish/subscribe workflow extended with an LLM.  
+A publisher sends sample sensor data to an MQTT topic, and a subscriber listens for incoming messages.  
 When a message is received, the subscriber sends the payload to an OpenAI LLM, which generates a brief analysis of the sensor data and prints the result to the console.
 
 ## Setup and Installation
@@ -23,13 +23,13 @@ OPEN_API_KEY=sk-xxxxxxxxxxxxxx
 - Place .env in .gitignore file 
 
 
-## Run Publisher
+## Run Publisher (in primary terminal)
 
 ```
 python pub.py
 ```
 
-## Run Subscriber
+## Run Subscriber (in secondary terminal)
 
 ```
 python sub.py
@@ -37,11 +37,15 @@ python sub.py
 
 # Example Usage
 
-1) start the subscriber in one terminal:
+1) Start the subscriber in one terminal:
+```
 python sub.py
+```
 
-2) start the publisher in a second terminal:
+2) Start the publisher in a second terminal:
+```
 python pub.py
+```
 
 3) When a message is published:
 - The sub prints the raw MQTT payload
@@ -50,8 +54,8 @@ python pub.py
 - The analysis is printed to the console
 
 ## Example output:
-Received message on topic pythontest/sensors/mysensor: {"temperature": 22.5, "humidity": 55}
+Received message on topic pythontest/sensors/mysensor: {"temperature": 22.5, "humidity": 55}  
 
---- LLM response ---
-The temperature and humidity values appear to be within a normal indoor range...
+--- LLM response ---  
+The temperature and humidity values appear to be within a normal indoor range...  
 --- end ---
