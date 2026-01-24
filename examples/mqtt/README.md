@@ -18,9 +18,9 @@ When a message is received, the subscriber sends the payload to an OpenAI LLM, w
 pip install paho-mqtt openai python-dotenv
 ```
 ## Configure openAI API key
-- Create a .env file in the project directory with the following content: 
+- Create a .env file in the project directory with the following content:   
 OPEN_API_KEY=sk-xxxxxxxxxxxxxx
-- Place .env in .gitignore file 
+- Place .env in .gitignore file prior to pushing
 
 
 ## Run Publisher (in primary terminal)
